@@ -3,20 +3,8 @@ let textArea = document.getElementById("text");
 let range = document.getElementById("range");
 let speak = document.getElementById("submit");
 let playSection = document.getElementById("play");
-
-//get control buttons
-let play = document.getElementById("play");
-let pause = document.getElementById("pause");
 let stop = document.getElementById("stop");
 
-play.addEventListener("click", (e) => {
-  e.preventDefault();
-  speechSynthesis.resume();
-});
-pause.addEventListener("click", (e) => {
-  e.preventDefault();
-  speechSynthesis.pause();
-});
 stop.addEventListener("click", (e) => {
   e.preventDefault();
   speechSynthesis.cancel();
@@ -44,9 +32,6 @@ speak.addEventListener("click", (e) => {
   // get the selected voice
     let selectedVoiceIndex = voicesSelect.value;
     utteredVoice.voice = voicesArr[selectedVoiceIndex];
-
-    //voice rate
-    // utteredVoice.rate = range?.value;
 
   //trigger voice to speak
   speechSynthesis.speak(utteredVoice);
