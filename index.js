@@ -41,12 +41,12 @@ speak.addEventListener("click", (e) => {
   let text = textArea.value;
   let utteredVoice = new SpeechSynthesisUtterance(text);
 
-  //get the selected voice
-  //   let selectedVoiceIndex = voicesSelect.value;
-  //   utteredVoice.voice = voicesArr[selectedVoiceIndex];
+  // get the selected voice
+    let selectedVoiceIndex = voicesSelect.value;
+    utteredVoice.voice = voicesArr[selectedVoiceIndex];
 
-  //   //voice rate
-  //   utteredVoice.rate = range?.value;
+    //voice rate
+    // utteredVoice.rate = range?.value;
 
   //trigger voice to speak
   speechSynthesis.speak(utteredVoice);

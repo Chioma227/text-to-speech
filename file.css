@@ -41,7 +41,7 @@ h2{
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
 #text::placeholder {
-  color: white;
+  color: rgb(199, 199, 199);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 5px;
 }
@@ -270,6 +270,10 @@ button:active {
   .container {
     background-image: url("/assets/img/Moon\ \(2\).svg");
     background-position: left 45px;
+  }
+  #text::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 3px;
   }
     h2{
         color: white;
