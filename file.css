@@ -14,7 +14,7 @@
   background-position: center;
   background-size: cover;
   overflow-y: scroll;
-  background-image: url("/assets/img/Sound Wave\ \(1\).svg");
+  background-image: url("/assets/img/Moon\ \(1\).svg");
 }
 h2{
     margin-bottom: 45px;
@@ -41,7 +41,7 @@ h2{
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
 #text::placeholder {
-  color: white;
+  color: rgb(199, 199, 199);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 5px;
 }
@@ -247,7 +247,7 @@ button:active {
     font-size: 35px;
 }
   .container {
-    background-image: url("/assets/img/Sound Wave\ \(2\).svg");
+    background-image: url("/assets/img/Moon\ \(2\).svg");
   }
   #stop {
     font-size: 1em;
@@ -267,6 +267,14 @@ button:active {
   }
 }
 @media (max-width:408px) {
+  .container {
+    background-image: url("/assets/img/Moon\ \(2\).svg");
+    background-position: left 45px;
+  }
+  #text::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 3px;
+  }
     h2{
         color: white;
         margin-bottom: 50px;
